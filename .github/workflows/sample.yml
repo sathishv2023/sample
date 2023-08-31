@@ -7,6 +7,14 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "My first name is $1"
-             echo "My surname is $2"
-             echo "Total number of arguments is $#"
+      
+      - uses: actions/checkout@v2
+
+      - name: Run a single line script
+        run: echo "Hello world"
+
+      - name: Run a multiple line script
+        run: 
+          echo "My first name is $1"
+          echo "My surname is $2"
+          echo "Total number of arguments is $#"
