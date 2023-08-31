@@ -1,0 +1,19 @@
+name: Github_action_sample
+
+
+on:
+  
+  push:
+    branches: [ "main" ]
+  
+  workflow_dispatch:
+
+jobs:
+  
+  deploy:
+  
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run a one-line script
+        run: echo Hello, world!
