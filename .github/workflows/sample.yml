@@ -1,18 +1,12 @@
 name: Github_action_sample
 
-
 on:
-  
-  push:
-    branches: [ "main" ]
-  
   workflow_dispatch:
 
 jobs:
-  
   deploy:
-  
     runs-on: ubuntu-latest
-
     steps:
-      - run: echo Hello, world!
+      - run: echo "My first name is $1"
+             echo "My surname is $2"
+             echo "Total number of arguments is $#"
