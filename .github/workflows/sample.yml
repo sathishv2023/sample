@@ -15,6 +15,5 @@ jobs:
 
       - name: Run a multiple line script
         run: 
-          echo "My first name is $1"
-          echo "My surname is $2"
-          echo "Total number of arguments is $#"
+          echo "My first name is sathish"
+          echo "My surname is velusamy"
